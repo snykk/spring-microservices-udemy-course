@@ -1,6 +1,6 @@
 services:
   accounts:
-    image: "najibfikri/spring-udemy-course-accounts:s4"
+    image: "najibfikri/spring-udemy-course-accounts:s6"
     container_name: accounts-ms
     ports:
       - "8080:8080"
@@ -11,7 +11,7 @@ services:
     networks:
       - eazybank
   loans:
-    image: "najibfikri/spring-udemy-course-loans:s4"
+    image: "najibfikri/spring-udemy-course-loans:s6"
     container_name: loans-ms
     ports:
       - "8090:8090"
@@ -22,7 +22,7 @@ services:
     networks:
       - eazybank
   cards:
-    image: "najibfikri/spring-udemy-course-cards:s4"
+    image: "najibfikri/spring-udemy-course-cards:s6"
     container_name: cards-ms
     ports:
       - "9000:9000"
