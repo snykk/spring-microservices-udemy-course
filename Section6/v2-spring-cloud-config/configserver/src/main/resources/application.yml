@@ -8,8 +8,8 @@ spring:
     config:
       server:
         # native:
-          # search-locations: "classpath:/config"
-          # search-locations: "file:///Users//eazybytes//Documents//config"
+        # search-locations: "classpath:/config"
+        # search-locations: "file:///Users//eazybytes//Documents//config"
         git:
           uri: "https://github.com/snykk/spring-config-udemy-course.git"
           default-label: main
