@@ -1,0 +1,4 @@
+# add jib plugin first inside pom.xml
+
+# build docker image using jib
+mvn compile jib:dockerBuild

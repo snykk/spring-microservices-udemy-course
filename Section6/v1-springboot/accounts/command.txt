@@ -1,0 +1,8 @@
+# build jar file
+mvn clean install
+
+# build docker image
+docker build . -t najibfikri/spring-udemy-course-accounts:s4
+
+# push docker image
+docker image push najibfikri/spring-udemy-course-accounts:s4
