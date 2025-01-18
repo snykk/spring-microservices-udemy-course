@@ -9,7 +9,7 @@ spring:
       server:
         # native:
         # search-locations: "classpath:/config"
-        # search-locations: "file:///Users//eazybytes//Documents//config"
+        # search-locations: "file:///Users//najibfikri//Documents//config"
         git:
           uri: "https://github.com/snykk/spring-config-udemy-course.git"
           default-label: master
@@ -31,9 +31,16 @@ management:
     health:
       probes:
         enabled: true
+  metrics:
+    tags:
+      application: ${spring.application.name}
 
 encrypt:
   key: "45D81EC1EF61DF9AD8D3E5BB397F9"
 
 server:
   port: 8071
+
+logging:
+  pattern:
+    level: "%5p [${spring.application.name},%X{trace_id},%X{span_id}]"
