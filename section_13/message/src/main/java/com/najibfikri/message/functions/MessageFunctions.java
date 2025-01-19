@@ -1,6 +1,6 @@
 package com.najibfikri.message.functions;
 
-import com.eazybytes.message.dto.AccountsMsgDto;
+import com.najibfikri.message.dto.AccountsMsgDto;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.annotation.Bean;
