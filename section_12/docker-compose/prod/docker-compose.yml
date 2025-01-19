@@ -228,7 +228,7 @@ services:
       service: network-deploy-service
 
   configserver:
-    image: "najibfikri/configserver:s12"
+    image: "najibfikri/spring-udemy-course-configserver:s12"
     container_name: configserver-ms
     ports:
       - "8071:8071"
@@ -245,7 +245,7 @@ services:
       OTEL_SERVICE_NAME: "configserver"
 
   eurekaserver:
-    image: "najibfikri/eurekaserver:s12"
+    image: "najibfikri/spring-udemy-course-eurekaserver:s12"
     container_name: eurekaserver-ms
     ports:
       - "8070:8070"
@@ -266,7 +266,7 @@ services:
       OTEL_SERVICE_NAME: "eurekaserver"
 
   accounts:
-    image: "najibfikri/accounts:s12"
+    image: "najibfikri/spring-udemy-course-accounts:s12"
     container_name: accounts-ms
     depends_on:
       configserver:
@@ -287,7 +287,7 @@ services:
       service: microservice-eureka-config
 
   loans:
-    image: "najibfikri/loans:s12"
+    image: "najibfikri/spring-udemy-course-loans:s12"
     container_name: loans-ms
     depends_on:
       configserver:
@@ -308,7 +308,7 @@ services:
       service: microservice-eureka-config
 
   cards:
-    image: "najibfikri/cards:s12"
+    image: "najibfikri/spring-udemy-course-cards:s12"
     container_name: cards-ms
     depends_on:
       configserver:
@@ -329,7 +329,7 @@ services:
       service: microservice-eureka-config
 
   gatewayserver:
-    image: "najibfikri/gatewayserver:s12"
+    image: "najibfikri/spring-udemy-course-gatewayserver:s12"
     container_name: gatewayserver-ms
     ports:
       - "8072:8072"
