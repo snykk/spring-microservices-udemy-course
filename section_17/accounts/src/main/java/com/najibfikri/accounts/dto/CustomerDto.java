@@ -15,7 +15,7 @@ import lombok.Data;
 public class CustomerDto {
 
     @Schema(
-            description = "Name of the customer", example = "Najib Fikri"
+            description = "Name of the customer", example = "Eazy Bytes"
     )
     @NotEmpty(message = "Name can not be a null or empty")
     @Size(min = 5, max = 30, message = "The length of the customer name should be between 5 and 30")

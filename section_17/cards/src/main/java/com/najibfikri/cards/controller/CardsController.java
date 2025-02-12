@@ -26,7 +26,7 @@ import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 /**
- * @author Najib Fikri
+ * @author Eazy Bytes
  */
 
 @Tag(
